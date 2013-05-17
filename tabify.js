@@ -1,3 +1,8 @@
+/*
+ * Tabify
+ * Author: chonla
+ * URL: https://github.com/chonla/tabify
+ */
 (function($){
 	$.fn.tabify = function(options) {
 		var default_options = {
