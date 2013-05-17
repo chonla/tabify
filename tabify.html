@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <title>Tabify DEMO</title>
+    <style type="text/css">
+    div {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+    .tabs_wrapper {
+        
+    }
+    .tabs_wrapper .tabs {
+        display: block;
+    }
+    .tabs_wrapper ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    .tabs_wrapper ul li {
+        float: left;
+        list-style: none;
+        display: block;
+    }
+    .tabs_wrapper ul li a {
+        display: block;
+        padding: 4px 10px;
+        border: 1px solid #000;
+        background-color: #ccc;
+        cursor: pointer;
+    }
+    
+    .tabs_wrapper ul li a.tab_active {
+        display: block;
+        padding: 4px 10px;
+        border: 1px solid #000;
+        border-bottom-color: #fff;
+        background-color: #fff;
+    }
+    
+    .tabs_wrapper .tabbodies {
+        border: 1px solid #000;
+        margin-top: -1px;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    </style>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="tabify.js"></script>
+    <script type="text/javascript">
+        $(function(){
+           $('.tabs_handler').tabify({'default_tab':'tabc'});
+           $('.tabs_handler2').tabify();
+        });
+    </script>
+</head>
+<body>
+    <div class="tabs_wrapper tabs_handler">
+        <div class="tabs">
+            <ul>
+                <li><a class="tab" rel="taba">a</a></li>
+                <li><a class="tab" rel="tabb">b</a></li>
+                <li><a class="tab" rel="tabc">c</a></li>
+            </ul>
+            <br class="clear">
+        </div>
+        <div class="tabbodies">
+            <div class="tabbody" rel="taba">tab a</div>
+            <div class="tabbody" rel="tabb">tab b</div>
+            <div class="tabbody" rel="tabc">tab c</div>
+            <br class="clear">
+        </div>
+        <br class="clear">
+    </div>
+    
+    <div class="tabs_wrapper tabs_handler2">
+        <div class="tabs">
+            <ul>
+                <li><a class="tab" rel="taba">a</a></li>
+                <li><a class="tab" rel="tabb">b</a></li>
+                <li><a class="tab" rel="tabc">c</a></li>
+            </ul>
+            <br class="clear">
+        </div>
+        <div class="tabbodies">
+            <div class="tabbody" rel="taba">tab a</div>
+            <div class="tabbody" rel="tabb">tab b</div>
+            <div class="tabbody" rel="tabc">tab c</div>
+            <br class="clear">
+        </div>
+        <br class="clear">
+    </div>    
+</body>
+</html>
